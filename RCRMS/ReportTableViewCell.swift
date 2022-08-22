@@ -13,6 +13,10 @@ class ReportTableViewCell: UITableViewCell {
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var tfContent: UITextField!
     
+    
+    @IBOutlet weak var lbDataTitle: UILabel!
+    @IBOutlet weak var tfDataContent: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

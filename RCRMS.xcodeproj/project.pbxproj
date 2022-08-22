@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA40D78650EEEAD439145D6F /* libPods-RCRMS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1658C202F8F74028DA07FFF9 /* libPods-RCRMS.a */; };
 		E40C232B1FB61821009A54F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C232A1FB61821009A54F7 /* AppDelegate.swift */; };
-		E40C232D1FB61821009A54F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C232C1FB61821009A54F7 /* ViewController.swift */; };
-		E40C23301FB61821009A54F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40C232E1FB61821009A54F7 /* Main.storyboard */; };
+		E40C232D1FB61821009A54F7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C232C1FB61821009A54F7 /* MapViewController.swift */; };
 		E40C23321FB61821009A54F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E40C23311FB61821009A54F7 /* Assets.xcassets */; };
 		E40C23351FB61821009A54F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40C23331FB61821009A54F7 /* LaunchScreen.storyboard */; };
 		E40C23401FB61821009A54F7 /* RCRMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C233F1FB61821009A54F7 /* RCRMSTests.swift */; };
+		E417A24D203B7D9300D1ECC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E417A24C203B7D9300D1ECC4 /* GoogleService-Info.plist */; };
+		E41E83381FBBFA190045B697 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41E83371FBBFA190045B697 /* ReportTableViewCell.swift */; };
+		E42F93EC2030CD2A00D016EF /* ConsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42F93EB2030CD2A00D016EF /* ConsViewController.swift */; };
+		E43C7A3D1FBA230F005D4C7F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43C7A3B1FBA230F005D4C7F /* SWRevealViewController.m */; };
+		E448E11E1FB620D40088D032 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448E11D1FB620D40088D032 /* PlacesViewController.swift */; };
+		E46932D91FB7CC260049F612 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46932D81FB7CC260049F612 /* MenuViewController.swift */; };
+		E46932DB1FB7CC380049F612 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46932DA1FB7CC380049F612 /* MenuTableViewCell.swift */; };
+		E46932DD1FB7D6020049F612 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46932DC1FB7D6020049F612 /* ReportViewController.swift */; };
+		E4A2BE19202785A600A2A0B4 /* LocateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A2BE18202785A600A2A0B4 /* LocateViewController.swift */; };
+		E4A5EF1E1FCFB1430080FC41 /* CellSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A5EF1D1FCFB1430080FC41 /* CellSetting.swift */; };
+		E4A5EF201FD23B6B0080FC41 /* HisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A5EF1F1FD23B6B0080FC41 /* HisViewController.swift */; };
+		E4CA1AF61FB69B3300803E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CA1AF41FB69B3300803E0B /* Main.storyboard */; };
+		E4E4EE93201AAD8B006E6D25 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E4EE92201AAD8B006E6D25 /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +39,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1658C202F8F74028DA07FFF9 /* libPods-RCRMS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCRMS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C5660A0957704863C749C6 /* Pods-RCRMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCRMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCRMS/Pods-RCRMS.debug.xcconfig"; sourceTree = "<group>"; };
+		99C2BFE722000A9489B575FA /* Pods-RCRMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCRMS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCRMS/Pods-RCRMS.release.xcconfig"; sourceTree = "<group>"; };
 		E40C23271FB61821009A54F7 /* RCRMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCRMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40C232A1FB61821009A54F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E40C232C1FB61821009A54F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E40C232F1FB61821009A54F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E40C232C1FB61821009A54F7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E40C23311FB61821009A54F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E40C23341FB61821009A54F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E40C23361FB61821009A54F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E40C233B1FB61821009A54F7 /* RCRMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCRMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40C233F1FB61821009A54F7 /* RCRMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCRMSTests.swift; sourceTree = "<group>"; };
 		E40C23411FB61821009A54F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E417A24C203B7D9300D1ECC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E41E83371FBBFA190045B697 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		E42F93EB2030CD2A00D016EF /* ConsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsViewController.swift; sourceTree = "<group>"; };
+		E43C7A3B1FBA230F005D4C7F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E43C7A3C1FBA230F005D4C7F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E448E11D1FB620D40088D032 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		E46932CE1FB7A70E0049F612 /* RCRMS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCRMS-Bridging-Header.h"; sourceTree = "<group>"; };
+		E46932D81FB7CC260049F612 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E46932DA1FB7CC380049F612 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		E46932DC1FB7D6020049F612 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		E4A2BE18202785A600A2A0B4 /* LocateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateViewController.swift; sourceTree = "<group>"; };
+		E4A2BE1A2029F48B00A2A0B4 /* RCRMS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RCRMS.entitlements; sourceTree = "<group>"; };
+		E4A5EF1D1FCFB1430080FC41 /* CellSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetting.swift; sourceTree = "<group>"; };
+		E4A5EF1F1FD23B6B0080FC41 /* HisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HisViewController.swift; sourceTree = "<group>"; };
+		E4CA1AF51FB69B3300803E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4E4EE92201AAD8B006E6D25 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA40D78650EEEAD439145D6F /* libPods-RCRMS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +88,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B6CAF9DFF5613B085DA81EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43C5660A0957704863C749C6 /* Pods-RCRMS.debug.xcconfig */,
+				99C2BFE722000A9489B575FA /* Pods-RCRMS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		664A36E0677395E027CC0D15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1658C202F8F74028DA07FFF9 /* libPods-RCRMS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E40C231E1FB61821009A54F7 = {
 			isa = PBXGroup;
 			children = (
 				E40C23291FB61821009A54F7 /* RCRMS */,
 				E40C233E1FB61821009A54F7 /* RCRMSTests */,
 				E40C23281FB61821009A54F7 /* Products */,
+				4B6CAF9DFF5613B085DA81EF /* Pods */,
+				664A36E0677395E027CC0D15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +128,27 @@
 		E40C23291FB61821009A54F7 /* RCRMS */ = {
 			isa = PBXGroup;
 			children = (
+				E4A2BE1A2029F48B00A2A0B4 /* RCRMS.entitlements */,
+				E43C7A3C1FBA230F005D4C7F /* SWRevealViewController.h */,
+				E43C7A3B1FBA230F005D4C7F /* SWRevealViewController.m */,
+				E4CA1AF41FB69B3300803E0B /* Main.storyboard */,
+				E4A2BE18202785A600A2A0B4 /* LocateViewController.swift */,
+				E4E4EE92201AAD8B006E6D25 /* DataViewController.swift */,
+				E4A5EF1F1FD23B6B0080FC41 /* HisViewController.swift */,
+				E46932DC1FB7D6020049F612 /* ReportViewController.swift */,
+				E46932D81FB7CC260049F612 /* MenuViewController.swift */,
+				E42F93EB2030CD2A00D016EF /* ConsViewController.swift */,
+				E46932DA1FB7CC380049F612 /* MenuTableViewCell.swift */,
 				E40C232A1FB61821009A54F7 /* AppDelegate.swift */,
-				E40C232C1FB61821009A54F7 /* ViewController.swift */,
-				E40C232E1FB61821009A54F7 /* Main.storyboard */,
+				E40C232C1FB61821009A54F7 /* MapViewController.swift */,
+				E4A5EF1D1FCFB1430080FC41 /* CellSetting.swift */,
 				E40C23311FB61821009A54F7 /* Assets.xcassets */,
 				E40C23331FB61821009A54F7 /* LaunchScreen.storyboard */,
+				E417A24C203B7D9300D1ECC4 /* GoogleService-Info.plist */,
 				E40C23361FB61821009A54F7 /* Info.plist */,
+				E448E11D1FB620D40088D032 /* PlacesViewController.swift */,
+				E46932CE1FB7A70E0049F612 /* RCRMS-Bridging-Header.h */,
+				E41E83371FBBFA190045B697 /* ReportTableViewCell.swift */,
 			);
 			path = RCRMS;
 			sourceTree = "<group>";
@@ -103,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E40C23441FB61821009A54F7 /* Build configuration list for PBXNativeTarget "RCRMS" */;
 			buildPhases = (
+				73ACD2780301DEC9A04DDFD1 /* [CP] Check Pods Manifest.lock */,
 				E40C23231FB61821009A54F7 /* Sources */,
 				E40C23241FB61821009A54F7 /* Frameworks */,
 				E40C23251FB61821009A54F7 /* Resources */,
+				4A32B3157A1BBD55E14336B0 /* [CP] Embed Pods Frameworks */,
+				8AC70099E454E450F75EFAB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,7 +215,16 @@
 				TargetAttributes = {
 					E40C23261FB61821009A54F7 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
 					};
 					E40C233A1FB61821009A54F7 = {
 						CreatedOnToolsVersion = 9.1;
@@ -179,9 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CA1AF61FB69B3300803E0B /* Main.storyboard in Resources */,
+				E417A24D203B7D9300D1ECC4 /* GoogleService-Info.plist in Resources */,
 				E40C23351FB61821009A54F7 /* LaunchScreen.storyboard in Resources */,
 				E40C23321FB61821009A54F7 /* Assets.xcassets in Resources */,
-				E40C23301FB61821009A54F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +273,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A32B3157A1BBD55E14336B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RCRMS/Pods-RCRMS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73ACD2780301DEC9A04DDFD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCRMS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC70099E454E450F75EFAB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RCRMS/Pods-RCRMS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RCRMS/Pods-RCRMS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E40C23231FB61821009A54F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E40C232D1FB61821009A54F7 /* ViewController.swift in Sources */,
+				E41E83381FBBFA190045B697 /* ReportTableViewCell.swift in Sources */,
+				E43C7A3D1FBA230F005D4C7F /* SWRevealViewController.m in Sources */,
+				E448E11E1FB620D40088D032 /* PlacesViewController.swift in Sources */,
+				E4A2BE19202785A600A2A0B4 /* LocateViewController.swift in Sources */,
+				E46932D91FB7CC260049F612 /* MenuViewController.swift in Sources */,
+				E4E4EE93201AAD8B006E6D25 /* DataViewController.swift in Sources */,
+				E4A5EF1E1FCFB1430080FC41 /* CellSetting.swift in Sources */,
+				E4A5EF201FD23B6B0080FC41 /* HisViewController.swift in Sources */,
+				E46932DB1FB7CC380049F612 /* MenuTableViewCell.swift in Sources */,
+				E40C232D1FB61821009A54F7 /* MapViewController.swift in Sources */,
+				E42F93EC2030CD2A00D016EF /* ConsViewController.swift in Sources */,
 				E40C232B1FB61821009A54F7 /* AppDelegate.swift in Sources */,
+				E46932DD1FB7D6020049F612 /* ReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +368,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E40C232E1FB61821009A54F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E40C232F1FB61821009A54F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E40C23331FB61821009A54F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E40C23341FB61821009A54F7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E4CA1AF41FB69B3300803E0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4CA1AF51FB69B3300803E0B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,31 +496,44 @@
 		};
 		E40C23451FB61821009A54F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C5660A0957704863C749C6 /* Pods-RCRMS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EPY79E64ER;
+				DEVELOPMENT_TEAM = X5AD64S9ZA;
 				INFOPLIST_FILE = RCRMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wqian.edu.RCRMS;
+				PRODUCT_BUNDLE_IDENTIFIER = LSSU.RCRMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RCRMS/RCRMS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E40C23461FB61821009A54F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C2BFE722000A9489B575FA /* Pods-RCRMS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EPY79E64ER;
+				DEVELOPMENT_TEAM = X5AD64S9ZA;
 				INFOPLIST_FILE = RCRMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wqian.edu.RCRMS;
+				PRODUCT_BUNDLE_IDENTIFIER = LSSU.RCRMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RCRMS/RCRMS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

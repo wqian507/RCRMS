@@ -7,7 +7,20 @@
 		<key>RCRMS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E40C23261FB61821009A54F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E40C233A1FB61821009A54F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

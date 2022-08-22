@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
+import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate{
 
     var window: UIWindow?
-
+    var currentLocation:String=""
+    var locationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSPlacesClient.provideAPIKey("AIzaSyCAms4dPwXNfS0s_qhltt_L9hH5jJ92ZMs")
+        GMSServices.provideAPIKey("AIzaSyCAms4dPwXNfS0s_qhltt_L9hH5jJ92ZMs")
+        FirebaseApp.configure()
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.delegate=self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
+        
         return true
     }
 
@@ -41,6 +55,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+    
+        let mainStoryboard:UIStoryboard=UIStoryboard(name:"Main",bundle:nil)
+        let rootViewController=mainStoryboard.instantiateViewController(withIdentifier: "SWRevealViewController") as! SWRevealViewController
+        self.window?.rootViewController=rootViewController
+        
+        //Here is some problems when first initial the app
+        if(currentLocation==""){
+            return
+        }
+        
+        if(shortcutItem.type == "Report"){
+            let desController=mainStoryboard.instantiateViewController(withIdentifier: "ReportViewController") as! ReportViewController
+            let newFrontViewController=UINavigationController.init(rootViewController:desController)
+            rootViewController.present(newFrontViewController, animated: true, completion: nil)
+
+            desController.GPS=currentLocation
+            var GPSArr=currentLocation.components(separatedBy: " ")
+            let coordinate:CLLocationCoordinate2D=CLLocationCoordinate2D.init(latitude: CLLocationDegrees(GPSArr[0])!, longitude: CLLocationDegrees(GPSArr[1])!)
+            let geocoder=GMSGeocoder()
+            geocoder.reverseGeocodeCoordinate(coordinate) { (response, error) in
+                if let location=response?.firstResult() {
+                    let lines = location.lines! as [String]
+                    desController.road=lines.joined(separator: ", ")
+                    desController.tableView.reloadData()
+                }
+            }
+        }
+        if(shortcutItem.type == "Mark"){
+            let desController=mainStoryboard.instantiateViewController(withIdentifier: "HisViewController") as! HisViewController
+            let newFrontViewController=UINavigationController.init(rootViewController:desController)
+            rootViewController.present(newFrontViewController, animated: true, completion: nil)
+            
+            let defaults=UserDefaults.standard
+            let date=Date()
+            let formate=DateFormatter()
+            formate.dateFormat="MM/dd/yyyy"
+            
+            var locations = defaults.object(forKey: "Location") as? [String] ?? [String]()
+            var dates=defaults.object(forKey: "Date") as? [String] ?? [String]()
+            var checks=defaults.object(forKey: "Check") as? [Bool] ?? [Bool]()
+            
+            locations.insert(currentLocation, at: 0)
+            dates.insert(formate.string(from: date), at: 0)
+            checks.insert(false, at: 0)
+            
+            defaults.set(locations, forKey: "Location")
+            defaults.set(dates, forKey: "Date")
+            defaults.set(checks, forKey: "Check")
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        self.currentLocation=String.localizedStringWithFormat("%.6f %.6f", locValue.latitude,locValue.longitude)
+    }
 
 }
 
